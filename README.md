@@ -31,7 +31,7 @@
 
 ## 项目框架
 - C/S架构
--![image](https://user-images.githubusercontent.com/107353989/230109934-220c14e8-dbdb-4f95-92be-b87620d4991c.png)
+- ![image](https://user-images.githubusercontent.com/107353989/230109934-220c14e8-dbdb-4f95-92be-b87620d4991c.png)
 - 高并发服务器框架
--![image](https://user-images.githubusercontent.com/107353989/230110327-184da9ec-339d-4f20-8e32-5a93dbec8a99.png)
--![image](https://user-images.githubusercontent.com/107353989/230110501-83076a46-1ec9-4f8a-8d88-489d16f375a4.png)
+- ![image](https://user-images.githubusercontent.com/107353989/230110327-184da9ec-339d-4f20-8e32-5a93dbec8a99.png)
+- ![image](https://user-images.githubusercontent.com/107353989/230110501-83076a46-1ec9-4f8a-8d88-489d16f375a4.png)
