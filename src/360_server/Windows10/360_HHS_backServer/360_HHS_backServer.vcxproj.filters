@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="IPC">
+      <UniqueIdentifier>{e3e52491-4e79-4ea4-88ed-e67b817143fc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ThreadPool">
+      <UniqueIdentifier>{0aca638d-aaac-4a2f-b90f-d738d6416b58}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Protocol">
+      <UniqueIdentifier>{65fe6ca6-f25c-49bc-b48b-4bf3d6c9cce8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Task">
+      <UniqueIdentifier>{285c00b9-0f7e-4b0e-b469-f0ab37c2ff88}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DataBase">
+      <UniqueIdentifier>{96868977-edb9-4497-ab60-799975af72e6}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="protocol.h">
+      <Filter>Protocol</Filter>
+    </ClInclude>
+    <ClInclude Include="ThreadPool.h">
+      <Filter>ThreadPool</Filter>
+    </ClInclude>
+    <ClInclude Include="BaseTask.h">
+      <Filter>Task</Filter>
+    </ClInclude>
+    <ClInclude Include="IPC.h">
+      <Filter>IPC</Filter>
+    </ClInclude>
+    <ClInclude Include="ChildTask.h">
+      <Filter>Task</Filter>
+    </ClInclude>
+    <ClInclude Include="SingleDB.h">
+      <Filter>DataBase</Filter>
+    </ClInclude>
+    <ClInclude Include="DBBusiness.h">
+      <Filter>DataBase</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ThreadPool.cpp">
+      <Filter>ThreadPool</Filter>
+    </ClCompile>
+    <ClCompile Include="BaseTask.cpp">
+      <Filter>Task</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="IPC.cpp">
+      <Filter>IPC</Filter>
+    </ClCompile>
+    <ClCompile Include="ChildTask.cpp">
+      <Filter>Task</Filter>
+    </ClCompile>
+    <ClCompile Include="SingleDB.cpp">
+      <Filter>DataBase</Filter>
+    </ClCompile>
+    <ClCompile Include="DBBusiness.cpp">
+      <Filter>DataBase</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

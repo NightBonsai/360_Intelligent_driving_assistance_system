@@ -1,0 +1,76 @@
+﻿  正在清理远程项目目录
+  正在验证源
+  正在将源远程复制到“192.168.9.128”
+  正在验证体系结构
+  正在验证体系结构
+  正在启动远程生成
+  正在编译源:
+  BaseTask.cpp
+D:\Microsoft Visual Studio\MyProjects\360_HHS_backServer\BaseTask.cpp(13,15): warning : deleting array ‘((BaseTask*)this)->BaseTask::data’
+D:\Microsoft Visual Studio\MyProjects\360_HHS_backServer\BaseTask.cpp(13,15): warning :   delete this->data;
+D:\Microsoft Visual Studio\MyProjects\360_HHS_backServer\BaseTask.cpp(13,15): warning :                ^
+  ChildTask.cpp
+D:\Microsoft Visual Studio\MyProjects\360_HHS_backServer\ChildTask.cpp(87,46): warning : argument to ‘sizeof’ in ‘void* memcpy(void*, const void*, size_t)’ call is the same pointer type ‘char*’ as the source; expected ‘char’ or an explicit length [-Wsizeof-pointer-memaccess]
+D:\Microsoft Visual Studio\MyProjects\360_HHS_backServer\ChildTask.cpp(87,46): warning :    memcpy(&loginBackPack.name, qres[1], sizeof(qres[0]));
+D:\Microsoft Visual Studio\MyProjects\360_HHS_backServer\ChildTask.cpp(87,46): warning :                                               ^
+D:\Microsoft Visual Studio\MyProjects\360_HHS_backServer\ChildTask.cpp(263,31): warning : comparison between signed and unsigned integer expressions [-Wsign-compare]
+D:\Microsoft Visual Studio\MyProjects\360_HHS_backServer\ChildTask.cpp(263,31): warning :    if (map_iter->second.size() == body.p_filePageNum)
+D:\Microsoft Visual Studio\MyProjects\360_HHS_backServer\ChildTask.cpp(263,31): warning :                                ^
+D:\Microsoft Visual Studio\MyProjects\360_HHS_backServer\ChildTask.cpp(301,23): warning : conversion to ‘int’ from ‘__off_t {aka long int}’ may alter its value [-Wconversion]
+D:\Microsoft Visual Studio\MyProjects\360_HHS_backServer\ChildTask.cpp(301,23): warning :     int size = statbuf.st_size;
+D:\Microsoft Visual Studio\MyProjects\360_HHS_backServer\ChildTask.cpp(301,23): warning :                        ^
+D:\Microsoft Visual Studio\MyProjects\360_HHS_backServer\ChildTask.cpp(636,16): warning : conversion to ‘uint32_t {aka unsigned int}’ from ‘std::__cxx11::basic_string<char>::size_type {aka long unsigned int}’ may alter its value [-Wconversion]
+D:\Microsoft Visual Studio\MyProjects\360_HHS_backServer\ChildTask.cpp(636,16): warning :    beginCmpPath = fullPath.size();
+D:\Microsoft Visual Studio\MyProjects\360_HHS_backServer\ChildTask.cpp(636,16): warning :                 ^
+D:\Microsoft Visual Studio\MyProjects\360_HHS_backServer\ChildTask.cpp(653,13): warning : conversion to ‘uint32_t {aka unsigned int}’ from ‘std::__cxx11::basic_string<char>::size_type {aka long unsigned int}’ may alter its value [-Wconversion]
+D:\Microsoft Visual Studio\MyProjects\360_HHS_backServer\ChildTask.cpp(653,13): warning :   endCmpPath = fullPath.size();
+D:\Microsoft Visual Studio\MyProjects\360_HHS_backServer\ChildTask.cpp(653,13): warning :              ^
+  DBBusiness.cpp
+D:\Microsoft Visual Studio\MyProjects\360_HHS_backServer\DBBusiness.cpp(137,1): warning : control reaches end of non-void function [-Wreturn-type]
+D:\Microsoft Visual Studio\MyProjects\360_HHS_backServer\DBBusiness.cpp(137,1): warning :  }
+D:\Microsoft Visual Studio\MyProjects\360_HHS_backServer\DBBusiness.cpp(137,1): warning :  ^
+  IPC.cpp
+D:\Microsoft Visual Studio\MyProjects\360_HHS_backServer\IPC.cpp(58,48): warning : narrowing conversion of ‘semrsvIndex’ from ‘int’ to ‘short unsigned int’ inside { } [-Wnarrowing]
+D:\Microsoft Visual Studio\MyProjects\360_HHS_backServer\IPC.cpp(58,48): warning :   struct sembuf buf = { semrsvIndex,-1,SEM_UNDO };
+D:\Microsoft Visual Studio\MyProjects\360_HHS_backServer\IPC.cpp(58,48): warning :                                                 ^
+D:\Microsoft Visual Studio\MyProjects\360_HHS_backServer\IPC.cpp(58,48): warning : conversion to ‘short unsigned int’ from ‘int’ may alter its value [-Wconversion]
+D:\Microsoft Visual Studio\MyProjects\360_HHS_backServer\IPC.cpp(69,47): warning : narrowing conversion of ‘semrsvIndex’ from ‘int’ to ‘short unsigned int’ inside { } [-Wnarrowing]
+D:\Microsoft Visual Studio\MyProjects\360_HHS_backServer\IPC.cpp(69,47): warning :   struct sembuf buf = { semrsvIndex,1,SEM_UNDO };
+D:\Microsoft Visual Studio\MyProjects\360_HHS_backServer\IPC.cpp(69,47): warning :                                                ^
+D:\Microsoft Visual Studio\MyProjects\360_HHS_backServer\IPC.cpp(69,47): warning : conversion to ‘short unsigned int’ from ‘int’ may alter its value [-Wconversion]
+D:\Microsoft Visual Studio\MyProjects\360_HHS_backServer\IPC.cpp(95,70): warning : pointer of type ‘void *’ used in arithmetic [-Wpointer-arith]
+D:\Microsoft Visual Studio\MyProjects\360_HHS_backServer\IPC.cpp(95,70): warning :   memcpy(&this->shmArr[rsvIndex], this->shmAddr + sizeof(int) * this->rsvIndex, sizeof(int));    //读索引区：首地址 + 一个索引*下标
+D:\Microsoft Visual Studio\MyProjects\360_HHS_backServer\IPC.cpp(95,70): warning :                                                                       ^
+D:\Microsoft Visual Studio\MyProjects\360_HHS_backServer\IPC.cpp(103,58): warning : pointer of type ‘void *’ used in arithmetic [-Wpointer-arith]
+D:\Microsoft Visual Studio\MyProjects\360_HHS_backServer\IPC.cpp(103,58): warning :     memcpy(&this->rsvPacket, this->shmAddr + sizeof(shmArr) + PACKET_SIZE*this->rsvIndex, PACKET_SIZE);
+D:\Microsoft Visual Studio\MyProjects\360_HHS_backServer\IPC.cpp(103,58): warning :                                                           ^
+D:\Microsoft Visual Studio\MyProjects\360_HHS_backServer\IPC.cpp(103,80): warning : pointer of type ‘void *’ used in arithmetic [-Wpointer-arith]
+D:\Microsoft Visual Studio\MyProjects\360_HHS_backServer\IPC.cpp(103,80): warning :     memcpy(&this->rsvPacket, this->shmAddr + sizeof(shmArr) + PACKET_SIZE*this->rsvIndex, PACKET_SIZE);
+D:\Microsoft Visual Studio\MyProjects\360_HHS_backServer\IPC.cpp(103,80): warning :                                                                                 ^
+D:\Microsoft Visual Studio\MyProjects\360_HHS_backServer\IPC.cpp(107,46): warning : pointer of type ‘void *’ used in arithmetic [-Wpointer-arith]
+D:\Microsoft Visual Studio\MyProjects\360_HHS_backServer\IPC.cpp(107,46): warning :     memset(this->shmAddr + sizeof(this->shmArr) + PACKET_SIZE*this->rsvIndex, 0, PACKET_SIZE);
+D:\Microsoft Visual Studio\MyProjects\360_HHS_backServer\IPC.cpp(107,46): warning :                                               ^
+D:\Microsoft Visual Studio\MyProjects\360_HHS_backServer\IPC.cpp(107,68): warning : pointer of type ‘void *’ used in arithmetic [-Wpointer-arith]
+D:\Microsoft Visual Studio\MyProjects\360_HHS_backServer\IPC.cpp(107,68): warning :     memset(this->shmAddr + sizeof(this->shmArr) + PACKET_SIZE*this->rsvIndex, 0, PACKET_SIZE);
+D:\Microsoft Visual Studio\MyProjects\360_HHS_backServer\IPC.cpp(107,68): warning :                                                                     ^
+D:\Microsoft Visual Studio\MyProjects\360_HHS_backServer\IPC.cpp(108,47): warning : pointer of type ‘void *’ used in arithmetic [-Wpointer-arith]
+D:\Microsoft Visual Studio\MyProjects\360_HHS_backServer\IPC.cpp(108,47): warning :     memset(this->shmAddr + sizeof(int) * this->rsvIndex, 0, sizeof(int));
+D:\Microsoft Visual Studio\MyProjects\360_HHS_backServer\IPC.cpp(108,47): warning :                                                ^
+D:\Microsoft Visual Studio\MyProjects\360_HHS_backServer\IPC.cpp(150,33): warning : pointer of type ‘void *’ used in arithmetic [-Wpointer-arith]
+D:\Microsoft Visual Studio\MyProjects\360_HHS_backServer\IPC.cpp(150,33): warning :    memcpy(shmAddr + sizeof(shmArr) + PACKET_SIZE * sndIndex, &this->sndPacket, PACKET_SIZE); //操作数据区：首地址 + 索引区总长度 + 数据区*下标
+D:\Microsoft Visual Studio\MyProjects\360_HHS_backServer\IPC.cpp(150,33): warning :                                  ^
+D:\Microsoft Visual Studio\MyProjects\360_HHS_backServer\IPC.cpp(150,51): warning : pointer of type ‘void *’ used in arithmetic [-Wpointer-arith]
+D:\Microsoft Visual Studio\MyProjects\360_HHS_backServer\IPC.cpp(150,51): warning :    memcpy(shmAddr + sizeof(shmArr) + PACKET_SIZE * sndIndex, &this->sndPacket, PACKET_SIZE); //操作数据区：首地址 + 索引区总长度 + 数据区*下标
+D:\Microsoft Visual Studio\MyProjects\360_HHS_backServer\IPC.cpp(150,51): warning :                                                    ^
+D:\Microsoft Visual Studio\MyProjects\360_HHS_backServer\IPC.cpp(152,34): warning : pointer of type ‘void *’ used in arithmetic [-Wpointer-arith]
+D:\Microsoft Visual Studio\MyProjects\360_HHS_backServer\IPC.cpp(152,34): warning :    memcpy(shmAddr + sizeof(int) * sndIndex, &shmArr[rsvIndex], sizeof(int));      //操作索引区：首地址 + 一个索引大小*下标
+D:\Microsoft Visual Studio\MyProjects\360_HHS_backServer\IPC.cpp(152,34): warning :                                   ^
+  main.cpp
+D:\Microsoft Visual Studio\MyProjects\360_HHS_backServer\main.cpp(21,36): warning : ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+D:\Microsoft Visual Studio\MyProjects\360_HHS_backServer\main.cpp(21,36): warning :    BaseTask* task = new ChildTask("");
+D:\Microsoft Visual Studio\MyProjects\360_HHS_backServer\main.cpp(21,36): warning :                                     ^
+  SingleDB.cpp
+  ThreadPool.cpp
+D:\Microsoft Visual Studio\MyProjects\360_HHS_backServer\ThreadPool.cpp(166,7): warning : unused variable ‘res’ [-Wunused-variable]
+  正在链接对象
+  360_HHS_backServer.vcxproj -> D:\Microsoft Visual Studio\MyProjects\360_HHS_backServer\bin\x64\Debug\360_HHS_backServer.out

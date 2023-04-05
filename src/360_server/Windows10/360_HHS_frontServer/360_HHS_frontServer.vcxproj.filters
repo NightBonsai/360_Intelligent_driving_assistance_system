@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="BaseTask.cpp">
+      <Filter>Task</Filter>
+    </ClCompile>
+    <ClCompile Include="ChildTask.cpp">
+      <Filter>Task</Filter>
+    </ClCompile>
+    <ClCompile Include="BaseSocket.cpp">
+      <Filter>Socket</Filter>
+    </ClCompile>
+    <ClCompile Include="HostAddress.cpp">
+      <Filter>Socket</Filter>
+    </ClCompile>
+    <ClCompile Include="TCPServer.cpp">
+      <Filter>Socket</Filter>
+    </ClCompile>
+    <ClCompile Include="EpollServer.cpp">
+      <Filter>Epoll</Filter>
+    </ClCompile>
+    <ClCompile Include="ThreadPool.cpp">
+      <Filter>ThreadPool</Filter>
+    </ClCompile>
+    <ClCompile Include="IPC.cpp">
+      <Filter>IPC</Filter>
+    </ClCompile>
+    <ClCompile Include="CRC.cpp">
+      <Filter>CRC</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="BaseTask.h">
+      <Filter>Task</Filter>
+    </ClInclude>
+    <ClInclude Include="ChildTask.h">
+      <Filter>Task</Filter>
+    </ClInclude>
+    <ClInclude Include="BaseSocket.h">
+      <Filter>Socket</Filter>
+    </ClInclude>
+    <ClInclude Include="HostAddress.h">
+      <Filter>Socket</Filter>
+    </ClInclude>
+    <ClInclude Include="TCPServer.h">
+      <Filter>Socket</Filter>
+    </ClInclude>
+    <ClInclude Include="EpollServer.h">
+      <Filter>Epoll</Filter>
+    </ClInclude>
+    <ClInclude Include="ThreadPool.h">
+      <Filter>ThreadPool</Filter>
+    </ClInclude>
+    <ClInclude Include="IPC.h">
+      <Filter>IPC</Filter>
+    </ClInclude>
+    <ClInclude Include="protocol.h">
+      <Filter>Protocol</Filter>
+    </ClInclude>
+    <ClInclude Include="CRC.h">
+      <Filter>CRC</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Task">
+      <UniqueIdentifier>{d7b01159-f0ef-4a38-9a0f-62133a58e7c3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="IPC">
+      <UniqueIdentifier>{21cf939a-a223-4f37-a72b-3d7f133a57d5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Protocol">
+      <UniqueIdentifier>{fc88acf4-efd1-47b1-8c30-14df5b60e557}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Socket">
+      <UniqueIdentifier>{75db7dc9-1adc-473d-92dc-14fcdfb802d6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Epoll">
+      <UniqueIdentifier>{334377c9-ad1d-40ab-8a12-e19785573810}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ThreadPool">
+      <UniqueIdentifier>{7abe6f16-833e-4f39-92b6-30cc2829b2a2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CRC">
+      <UniqueIdentifier>{8b8c1bcd-6f1f-4c9f-a588-0cd95f68b691}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

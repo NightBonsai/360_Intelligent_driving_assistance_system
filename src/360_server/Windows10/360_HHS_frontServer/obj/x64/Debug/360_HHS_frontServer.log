@@ -1,0 +1,90 @@
+﻿  正在清理远程项目目录
+  正在验证源
+  正在将源远程复制到“192.168.9.128”
+  正在验证体系结构
+  正在验证体系结构
+  正在启动远程生成
+  正在编译源:
+  BaseSocket.cpp
+  BaseTask.cpp
+D:\Microsoft Visual Studio\MyProjects\360_HHS_frontServer\BaseTask.cpp(13,15): warning : deleting array ‘((BaseTask*)this)->BaseTask::data’
+D:\Microsoft Visual Studio\MyProjects\360_HHS_frontServer\BaseTask.cpp(13,15): warning :   delete this->data;
+D:\Microsoft Visual Studio\MyProjects\360_HHS_frontServer\BaseTask.cpp(13,15): warning :                ^
+  ChildTask.cpp
+D:\Microsoft Visual Studio\MyProjects\360_HHS_frontServer\ChildTask.cpp(55,10): warning : comparison between signed and unsigned integer expressions [-Wsign-compare]
+D:\Microsoft Visual Studio\MyProjects\360_HHS_frontServer\ChildTask.cpp(55,10): warning :   if (crc == oldHead.CRC)
+D:\Microsoft Visual Studio\MyProjects\360_HHS_frontServer\ChildTask.cpp(55,10): warning :           ^
+D:\Microsoft Visual Studio\MyProjects\360_HHS_frontServer\ChildTask.cpp(105,66): warning : conversion to ‘int’ from ‘ssize_t {aka long int}’ may alter its value [-Wconversion]
+D:\Microsoft Visual Studio\MyProjects\360_HHS_frontServer\ChildTask.cpp(105,66): warning :    int writeRes = write(this->workfd, crcPacket, sizeof(crcPacket));
+D:\Microsoft Visual Studio\MyProjects\360_HHS_frontServer\ChildTask.cpp(105,66): warning :                                                                   ^
+D:\Microsoft Visual Studio\MyProjects\360_HHS_frontServer\ChildTask.cpp(176,87): warning : conversion to ‘int’ from ‘ssize_t {aka long int}’ may alter its value [-Wconversion]
+D:\Microsoft Visual Studio\MyProjects\360_HHS_frontServer\ChildTask.cpp(176,87): warning :   int writeRes = write(this->rsvHead.acceptfd, newReturnPacket, sizeof(newReturnPacket));
+D:\Microsoft Visual Studio\MyProjects\360_HHS_frontServer\ChildTask.cpp(176,87): warning :                                                                                        ^
+  CRC.cpp
+  EpollServer.cpp
+D:\Microsoft Visual Studio\MyProjects\360_HHS_frontServer\EpollServer.cpp(39,15): warning : deleting object of polymorphic class type ‘TCPServer’ which has non-virtual destructor might cause undefined behaviour [-Wdelete-non-virtual-dtor]
+D:\Microsoft Visual Studio\MyProjects\360_HHS_frontServer\EpollServer.cpp(39,15): warning :   delete this->TCP;
+D:\Microsoft Visual Studio\MyProjects\360_HHS_frontServer\EpollServer.cpp(39,15): warning :                ^
+D:\Microsoft Visual Studio\MyProjects\360_HHS_frontServer\EpollServer.cpp(40,15): warning : deleting array ‘((EpollServer*)this)->EpollServer::epollEventArray’
+D:\Microsoft Visual Studio\MyProjects\360_HHS_frontServer\EpollServer.cpp(40,15): warning :   delete this->epollEventArray;
+D:\Microsoft Visual Studio\MyProjects\360_HHS_frontServer\EpollServer.cpp(40,15): warning :                ^
+D:\Microsoft Visual Studio\MyProjects\360_HHS_frontServer\EpollServer.cpp(42,15): warning : deleting array ‘((EpollServer*)this)->EpollServer::packet’
+D:\Microsoft Visual Studio\MyProjects\360_HHS_frontServer\EpollServer.cpp(42,15): warning :   delete this->packet;
+D:\Microsoft Visual Studio\MyProjects\360_HHS_frontServer\EpollServer.cpp(42,15): warning :                ^
+D:\Microsoft Visual Studio\MyProjects\360_HHS_frontServer\EpollServer.cpp(92,15): warning : conversion to ‘int’ from ‘ssize_t {aka long int}’ may alter its value [-Wconversion]
+D:\Microsoft Visual Studio\MyProjects\360_HHS_frontServer\EpollServer.cpp(92,15): warning :      this->res = read(epollEventArray[i].data.fd, this->packet, sizeof(this->packet));
+D:\Microsoft Visual Studio\MyProjects\360_HHS_frontServer\EpollServer.cpp(92,15): warning :                ^
+D:\Microsoft Visual Studio\MyProjects\360_HHS_frontServer\EpollServer.cpp(202,51): warning : ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+D:\Microsoft Visual Studio\MyProjects\360_HHS_frontServer\EpollServer.cpp(202,51): warning :    BaseTask* task = new ChildTask("", GET_FROM_BACK);
+D:\Microsoft Visual Studio\MyProjects\360_HHS_frontServer\EpollServer.cpp(202,51): warning :                                                    ^
+  HostAddress.cpp
+  IPC.cpp
+D:\Microsoft Visual Studio\MyProjects\360_HHS_frontServer\IPC.cpp(46,15): warning : deleting ‘void*’ is undefined [-Wdelete-incomplete]
+D:\Microsoft Visual Studio\MyProjects\360_HHS_frontServer\IPC.cpp(46,15): warning :   delete this->shmAddr;
+D:\Microsoft Visual Studio\MyProjects\360_HHS_frontServer\IPC.cpp(46,15): warning :                ^
+D:\Microsoft Visual Studio\MyProjects\360_HHS_frontServer\IPC.cpp(47,15): warning : deleting array ‘((IPC*)this)->IPC::shmArr’
+D:\Microsoft Visual Studio\MyProjects\360_HHS_frontServer\IPC.cpp(47,15): warning :   delete this->shmArr;
+D:\Microsoft Visual Studio\MyProjects\360_HHS_frontServer\IPC.cpp(47,15): warning :                ^
+D:\Microsoft Visual Studio\MyProjects\360_HHS_frontServer\IPC.cpp(48,15): warning : deleting array ‘((IPC*)this)->IPC::sndPacket’
+D:\Microsoft Visual Studio\MyProjects\360_HHS_frontServer\IPC.cpp(48,15): warning :   delete this->sndPacket;
+D:\Microsoft Visual Studio\MyProjects\360_HHS_frontServer\IPC.cpp(48,15): warning :                ^
+D:\Microsoft Visual Studio\MyProjects\360_HHS_frontServer\IPC.cpp(79,48): warning : narrowing conversion of ‘semsndIndex’ from ‘int’ to ‘short unsigned int’ inside { } [-Wnarrowing]
+D:\Microsoft Visual Studio\MyProjects\360_HHS_frontServer\IPC.cpp(79,48): warning :   struct sembuf buf = { semsndIndex,-1,SEM_UNDO };
+D:\Microsoft Visual Studio\MyProjects\360_HHS_frontServer\IPC.cpp(79,48): warning :                                                 ^
+D:\Microsoft Visual Studio\MyProjects\360_HHS_frontServer\IPC.cpp(79,48): warning : conversion to ‘short unsigned int’ from ‘int’ may alter its value [-Wconversion]
+D:\Microsoft Visual Studio\MyProjects\360_HHS_frontServer\IPC.cpp(90,47): warning : narrowing conversion of ‘semsndIndex’ from ‘int’ to ‘short unsigned int’ inside { } [-Wnarrowing]
+D:\Microsoft Visual Studio\MyProjects\360_HHS_frontServer\IPC.cpp(90,47): warning :   struct sembuf buf = { semsndIndex,1,SEM_UNDO };
+D:\Microsoft Visual Studio\MyProjects\360_HHS_frontServer\IPC.cpp(90,47): warning :                                                ^
+D:\Microsoft Visual Studio\MyProjects\360_HHS_frontServer\IPC.cpp(90,47): warning : conversion to ‘short unsigned int’ from ‘int’ may alter its value [-Wconversion]
+D:\Microsoft Visual Studio\MyProjects\360_HHS_frontServer\IPC.cpp(125,33): warning : pointer of type ‘void *’ used in arithmetic [-Wpointer-arith]
+D:\Microsoft Visual Studio\MyProjects\360_HHS_frontServer\IPC.cpp(125,33): warning :    memcpy(shmAddr + sizeof(shmArr) + PACKET_SIZE*sndIndex, &this->sndPacket, PACKET_SIZE); //操作数据区：首地址 + 索引区总长度 + 数据区*下标
+D:\Microsoft Visual Studio\MyProjects\360_HHS_frontServer\IPC.cpp(125,33): warning :                                  ^
+D:\Microsoft Visual Studio\MyProjects\360_HHS_frontServer\IPC.cpp(125,49): warning : pointer of type ‘void *’ used in arithmetic [-Wpointer-arith]
+D:\Microsoft Visual Studio\MyProjects\360_HHS_frontServer\IPC.cpp(125,49): warning :    memcpy(shmAddr + sizeof(shmArr) + PACKET_SIZE*sndIndex, &this->sndPacket, PACKET_SIZE); //操作数据区：首地址 + 索引区总长度 + 数据区*下标
+D:\Microsoft Visual Studio\MyProjects\360_HHS_frontServer\IPC.cpp(125,49): warning :                                                  ^
+D:\Microsoft Visual Studio\MyProjects\360_HHS_frontServer\IPC.cpp(127,32): warning : pointer of type ‘void *’ used in arithmetic [-Wpointer-arith]
+D:\Microsoft Visual Studio\MyProjects\360_HHS_frontServer\IPC.cpp(127,32): warning :    memcpy(shmAddr + sizeof(int)*sndIndex, &shmArr[sndIndex], sizeof(int));     //操作索引区：首地址 + 一个索引大小*下标
+D:\Microsoft Visual Studio\MyProjects\360_HHS_frontServer\IPC.cpp(127,32): warning :                                 ^
+D:\Microsoft Visual Studio\MyProjects\360_HHS_frontServer\IPC.cpp(193,70): warning : pointer of type ‘void *’ used in arithmetic [-Wpointer-arith]
+D:\Microsoft Visual Studio\MyProjects\360_HHS_frontServer\IPC.cpp(193,70): warning :   memcpy(&this->shmArr[rsvIndex], this->shmAddr + sizeof(int) * this->rsvIndex, sizeof(int));    //读索引区：首地址 + 一个索引*下标
+D:\Microsoft Visual Studio\MyProjects\360_HHS_frontServer\IPC.cpp(193,70): warning :                                                                       ^
+D:\Microsoft Visual Studio\MyProjects\360_HHS_frontServer\IPC.cpp(201,58): warning : pointer of type ‘void *’ used in arithmetic [-Wpointer-arith]
+D:\Microsoft Visual Studio\MyProjects\360_HHS_frontServer\IPC.cpp(201,58): warning :     memcpy(&this->rsvPacket, this->shmAddr + sizeof(shmArr) + PACKET_SIZE * this->rsvIndex, PACKET_SIZE);
+D:\Microsoft Visual Studio\MyProjects\360_HHS_frontServer\IPC.cpp(201,58): warning :                                                           ^
+D:\Microsoft Visual Studio\MyProjects\360_HHS_frontServer\IPC.cpp(201,82): warning : pointer of type ‘void *’ used in arithmetic [-Wpointer-arith]
+D:\Microsoft Visual Studio\MyProjects\360_HHS_frontServer\IPC.cpp(201,82): warning :     memcpy(&this->rsvPacket, this->shmAddr + sizeof(shmArr) + PACKET_SIZE * this->rsvIndex, PACKET_SIZE);
+D:\Microsoft Visual Studio\MyProjects\360_HHS_frontServer\IPC.cpp(201,82): warning :                                                                                   ^
+D:\Microsoft Visual Studio\MyProjects\360_HHS_frontServer\IPC.cpp(222,46): warning : pointer of type ‘void *’ used in arithmetic [-Wpointer-arith]
+D:\Microsoft Visual Studio\MyProjects\360_HHS_frontServer\IPC.cpp(222,46): warning :     memset(this->shmAddr + sizeof(this->shmArr) + PACKET_SIZE * this->rsvIndex, 0, PACKET_SIZE);
+D:\Microsoft Visual Studio\MyProjects\360_HHS_frontServer\IPC.cpp(222,46): warning :                                               ^
+D:\Microsoft Visual Studio\MyProjects\360_HHS_frontServer\IPC.cpp(222,70): warning : pointer of type ‘void *’ used in arithmetic [-Wpointer-arith]
+D:\Microsoft Visual Studio\MyProjects\360_HHS_frontServer\IPC.cpp(222,70): warning :     memset(this->shmAddr + sizeof(this->shmArr) + PACKET_SIZE * this->rsvIndex, 0, PACKET_SIZE);
+D:\Microsoft Visual Studio\MyProjects\360_HHS_frontServer\IPC.cpp(222,70): warning :                                                                       ^
+D:\Microsoft Visual Studio\MyProjects\360_HHS_frontServer\IPC.cpp(223,47): warning : pointer of type ‘void *’ used in arithmetic [-Wpointer-arith]
+D:\Microsoft Visual Studio\MyProjects\360_HHS_frontServer\IPC.cpp(223,47): warning :     memset(this->shmAddr + sizeof(int) * this->rsvIndex, 0, sizeof(int));
+D:\Microsoft Visual Studio\MyProjects\360_HHS_frontServer\IPC.cpp(223,47): warning :                                                ^
+  main.cpp
+  TCPServer.cpp
+  ThreadPool.cpp
+  正在链接对象
+  360_HHS_frontServer.vcxproj -> D:\Microsoft Visual Studio\MyProjects\360_HHS_frontServer\bin\x64\Debug\360_HHS_frontServer.out
