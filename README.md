@@ -19,7 +19,7 @@
 - **高并发服务器架构**
 
 ## 项目实现主要功能
-![image](https://user-images.githubusercontent.com/107353989/230109436-827a6495-752c-426b-8da4-2290b268dad8.png)
+![image](https://user-images.githubusercontent.com/107353989/230111903-6e317f34-3411-4097-8305-c528d562c80c.png)
 
 ## 项目开发流程
 16个工作日
@@ -31,7 +31,7 @@
 
 ## 项目框架
 - C/S架构
-- ![image](https://user-images.githubusercontent.com/107353989/230109934-220c14e8-dbdb-4f95-92be-b87620d4991c.png)
+- ![image](https://user-images.githubusercontent.com/107353989/230112403-6c63788f-34df-4529-8e40-bc39225530a8.png)
 - 高并发服务器框架
 - ![image](https://user-images.githubusercontent.com/107353989/230110327-184da9ec-339d-4f20-8e32-5a93dbec8a99.png)
-- ![image](https://user-images.githubusercontent.com/107353989/230110501-83076a46-1ec9-4f8a-8d88-489d16f375a4.png)
+- ![Uploading image.png…]()
